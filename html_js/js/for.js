@@ -951,69 +951,32 @@ a new array with only the first and last character of each string.
 */
 
 // function vowelCount(arr){
-// let vowels=['a','e','i','o','u'];
-// let obj = {};
+//     obj={}
+//     x=0
+//     x1=0
+//     x2=0
+//     x3=0
+//     key=""
 //     for(i=0;i<arr.length;i++){
-//         if(arr[i]=='e' ||arr[i]=='E')
-//         obj.e= obj.e?obj.e++:1;
-//         // if(arr[i]=='i' ||arr[i]=='I')
-//         // obj.i= obj.i?obj.i++:1;
-//         if(arr[i]=='a' ||arr[i]=='A')
-//         obj.a= obj.a?obj.a++:1; 
-//         if(arr[i]=='o' ||arr[i]=='O')
-//         obj.o= obj.o?obj.o++:1; }
+       
+//         if(arr[i]=='e' ||arr[i]=='E'){
+//         x+=1
+//         key='e'
+//         obj[key]=x}
+//         if(arr[i]=='i' ||arr[i]=='I'){
+//         x1+=1
+//         key='i'
+//         obj[key]=x1 }
+//         if(arr[i]=='a' ||arr[i]=='A'){
+//         x2+=1
+//         key='a'
+//         obj[key]=x2 }
+//         if(arr[i]=='o' ||arr[i]=='O'){
+//         x3+=1
+//         key='o'
+//         obj[key]=x3}} 
 //     return obj
 // }console.log(vowelCount('Elie'))
 // console.log(vowelCount('Tim'))
 // console.log(vowelCount('I Am awesome and so are you'))
-
-
-
-// function vowelCount(str){
-//     let vowels =['a','e','i','o','u'];
-//     let obj = {};
-//     for (let index = 0; index < str.length; index++) {
-//         switch(true){
-
-//             case str[index] == 'a' || str[index] =='A':
-//             obj.a= obj.a?obj.a++:1;
-//             break;
-//             case str[index] == 'e'  ||str[index] =='E':
-//             obj.e= obj.e?obj.e++:1;
-//             break;
-//             case str[index] == 'i' || str[index] =='I':
-//             obj.i= obj.i?obj.i++:1;
-//             break;
-//             case str[index] == 'o' || str[index] =='O':
-//             obj.o= obj.o?obj.o++:1;
-//             break;
-//             case str[index] == 'u' || str[index] =='U':
-//             obj.u= obj.u?obj.u++:1;
-//             break;
-//         }
-
-//     }
-//     return obj
-
-// }console.log(vowelCount('I Am awesome and so are you'))
-// console.log(vowelCount('Elie'))
-
-
-// function vowelCount(arr){
-//     obj=0
-//     obj2=0
-//     obj4=0
-//     obj3=0
-//     for(i=0;i<arr.length;i++){
-//         if(arr[i]=='e' ||arr[i]=='E')
-//         obj+=1
-//         if(arr[i]=='i' ||arr[i]=='I')
-//         obj2+=1 
-//         if(arr[i]=='a' ||arr[i]=='A')
-//         obj3+=1 
-//         if(arr[i]=='o' ||arr[i]=='O')
-//         obj4+=1 }
-//     return `{e:${obj},i:${obj2},a:${obj3},o:${obj4}}`
-// }console.log(vowelCount('Elie'))
-// console.log(vowelCount('Tim'))
-// console.log(vowelCount('I Am awesome and so are you'))
+// console.log(vowelCount('mohammad aldbee'))
