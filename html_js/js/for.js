@@ -153,8 +153,7 @@ var array2 = [5,9,-7,3.5]
 // function onlyEvenValues(arr){
 //     if(arr%2==0){
 //         return arr
-//     }
-   
+//     }  
 // }   
 // Values3 = ([5,1,2,3,10])
 // Values4 =Values3.filter(onlyEvenValues2)
@@ -163,7 +162,6 @@ var array2 = [5,9,-7,3.5]
 //     if(arr%2==0){
 //         return arr
 //     }
-   
 // }   
 
 /*
@@ -200,20 +198,21 @@ and return the two middle elemnt in an array if it is have an even elemnets
 Ex: middleOfArray([1,4,5]) => 4
 Ex: middleOfArray(["t","u","g","x"]) =>"u and g"
 */
-// middle=[1,4,5]
-// function Arra(){
-// return middle.slice(1,length-1)
+
+// function Arra(middle){
+//     let x;
+//     let x1;
+//     if (middle.length%2 !==0){
+// x = middle.length/2 -.5
+// return middle[x]
+// } else{
+// x = middle.length/2
+// x1 = x-1
+// return `${middle[x]}  ${middle[x1]}`
 // }
-// console.log(Arra())
-
-// middle=["t","u","g","x"]
-
-// function Arra(){
-// return middle.slice(1,length-1)
 // }
-
-// console.log(Arra())
-
+// console.log(Arra(["t","u","g","x"]))
+// console.log(Arra([1,4,5]))
 
 /*
 9
@@ -706,16 +705,20 @@ Ex: repeatStr("to",2); => "to to"
 Ex: repeatStr("to",4); => "to to to to"
 */
 
-// function repeatStr(str,n){
-// i = 0;
-// d = ""
-// while(i<n){
-// d += ` ${str} `
-// i++
-// }
-// return  ` "${d} "`
-// }
-// console.log(repeatStr("hello",5))
+function repeatStr(str,n){
+i = 0;
+d = ""
+while(i<n){
+if(i<n-1){
+d+= `${str} `}
+else{
+    d+=`${str}`
+}
+i++
+}
+return  ` "${d}"`
+}
+console.log(repeatStr("hello",5))
 
 /*
 4
@@ -772,7 +775,6 @@ Ex: muti2(3, 6); => 3 * 4 * 5 * 6 => 360
 //         }
 //         return x2
 //     }console.log(muti2(2,6))
-
 /*
 7
 Create a function called numberBetweenUs
@@ -822,7 +824,6 @@ countDown(7)
 // i = n;
 // d = ""
 // while(n>0){
-
 // d += ` ${n}, `
 // n--
 // }
